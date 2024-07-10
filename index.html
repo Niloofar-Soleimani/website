@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./swiper/swiper-bundle.min.css">
+</head>
+<body>
+<div class="wrraper">
+
+    <div class="menu">
+        <nav>
+            <div class="item"><a href="" class="link">Home</a></div>
+            <div class="item"><a href="" class="link">Gallery</a></div>
+            <div class="item"><a href="" class="link">About Us</a></div>
+            <div class="item"><a href="" class="link">Contact</a></div>
+        </nav>
+    </div>
+<!-- end menu -->
+
+
+<!--  start product-->
+<div class="products">
+
+
+<div class="product">
+    <div class="image"><img src="./image/honda-prelude-concept-front-thre.jpg" alt=""></div>
+    <h3>price:1000000$</h3>
+</div>
+
+<div class="product">
+    <div class="image"><img src="./image/honda-prelude-concept-front-thre.jpg" alt=""></div>
+    <h3>price:1000000$</h3>
+</div>
+
+
+<div class="product">
+    <div class="image"><img src="./image/honda-prelude-concept-front-thre.jpg" alt=""></div>
+    <h3>price:1000000$</h3>
+</div>
+
+
+</div>
+<!-- end product -->
+
+<!-- start swper -->
+<div class="slide1">
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="./image/honda-prelude-concept-front-thre.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="./image/honda-prelude-concept-front-thre.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="./image/honda-prelude-concept-front-thre.jpg" alt=""></div>
+ 
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+
+
+</div>
+</div>
+
+<script src="./swiper/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 0,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+</body>
+</html>
